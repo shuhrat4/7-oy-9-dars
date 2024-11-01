@@ -1,7 +1,7 @@
 import React from 'react'
 import CustomTable from '../components/CustomTable'
 import axios from 'axios'
-import { EditFilled, MoreOutlined } from '@ant-design/icons'
+import { DeleteOutlined, EditFilled, MoreOutlined } from '@ant-design/icons'
 import { useQuery } from '@tanstack/react-query'
 
 function Home() {
@@ -15,6 +15,7 @@ function Home() {
           <div className='flex items-center space-x-5'>
             <MoreOutlined className='cursor-pointer' />
             <EditFilled className='cursor-pointer' />
+            <DeleteOutlined className='cursor-pointer'/>
           </div>
         )
         return item
@@ -23,7 +24,7 @@ function Home() {
   }
  
   const { data: studentsData = [] } = useQuery({
-    queryKey: ["students"],  // 'qureKey' o'rniga 'queryKey' bo'lishi kerak
+    queryKey: ["students"],  
     queryFn: getAllStudents
   })
 

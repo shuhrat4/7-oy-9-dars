@@ -9,11 +9,10 @@ const columns = [
     {
         title: 'Name',
         dataIndex: 'name',
-
     },
     {
         title: 'Surname',
-        dataIndex: 'sername',
+        dataIndex: 'surname', 
     },
     {
         title: 'Age',
@@ -22,12 +21,13 @@ const columns = [
     {
         title: 'Action',
         dataIndex: 'action',
-      },
+    },
 ];
 
-function CustomTable({data}) {
+function CustomTable({ data }) {
     return (
         <Table columns={columns} dataSource={data} />
-    )
+    );
 }
+
 export default CustomTable;
