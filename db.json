@@ -1,10 +1,22 @@
 {
-    "students":[
-        {
-            "id":"1",
-            "name":"Shuhrat",
-            "surname":"Xudoyberdiyev",
-            "age":"20"
-        }
-    ]
+  "students": [
+    {
+      "id": "1",
+      "name": "Shuhrat",
+      "surname": "Xudoyberdiyev",
+      "age": "20"
+    },
+    {
+      "id": "5a25",
+      "name": "shuhrat",
+      "surname": "mirxoliqov",
+      "age": "20"
+    },
+    {
+      "id": "60f7",
+      "name": "shuhrat",
+      "surname": "mirxoliqov",
+      "age": "20"
+    }
+  ]
 }
