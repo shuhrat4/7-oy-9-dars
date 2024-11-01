@@ -10,7 +10,7 @@ function App() {
     <header className='py-5 bg-slate-200 flex items-center justify-center gap-5'>
       <Link className="font-bold text-[20px]"to={"/"}>Home</Link>
       <Link className="font-bold text-[20px]"to={"/add"}>Create</Link>
-      <Link className="font-bold text-[20px]"to={"/login"}>Login</Link>
+      <Link className="font-bold text-[20px]"to={"/Login"}>Login</Link>
     </header>
       <Routes>
         <Route path="/" element={<Home />} />

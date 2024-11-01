@@ -1,16 +1,3 @@
 {
-  "students": [
-    {
-      "id": "1",
-      "name": "Shuhrat",
-      "surname": "Xudoyberdiyev",
-      "age": "20"
-    },
-    {
-      "id": "9827",
-      "name": "d",
-      "surname": "d",
-      "age": "d"
-    }
-  ]
+  "students": []
 }
