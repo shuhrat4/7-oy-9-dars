@@ -58,7 +58,7 @@ function Add() {
         className='w-full' 
         size='large' 
         type='primary'
-        loading={mutation.isLoading} // Yuborish jarayonida yuklanish holati
+        loading={mutation.isLoading}
       >
         Submit
       </Button>

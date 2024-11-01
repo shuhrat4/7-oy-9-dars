@@ -2,19 +2,17 @@ import { Button } from 'antd';
 import { useFormik } from 'formik';
 import React from 'react';
 import { LoginSchema } from '../validation/loginSchema';
-import { useNavigate } from 'react-router-dom';
 
 function Login() {
-   const navigate = useNavigate()
    const { values, errors, handleBlur, handleChange, handleSubmit, touched } = useFormik({
       initialValues: {
-         username: "222",
-         userEmail: "login@gmail.com",
-         password: "22222222"
+         username: "",
+         userEmail: "",
+         password: ""
       },
       validationSchema: LoginSchema,
       onSubmit: () => {
-      navigate("/Home")
+         console.log("Submit");
       }
    });
 
@@ -59,7 +57,7 @@ function Login() {
             />
             {touched.password && errors.password ? <span className='text-red-500'>{errors.password}</span> : ""}
          </label>
-         <Button size='large' type='primary' htmlType='submit'>Login</Button>
+         <Button size='large' type='primary' htmlType='submit'>Sign up</Button>
       </form>
    );
 }
