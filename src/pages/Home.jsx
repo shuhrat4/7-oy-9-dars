@@ -8,12 +8,10 @@ function Home() {
   const HTTP = import.meta.env.VITE_API
   const queryClient = useQueryClient()
 
-  // O'chirish funktsiyasi
   function deleteStudent(id) {
     return axios.delete(`${HTTP}/students/${id}`);
   }
 
-  // O'quvchilarni olish funktsiyasi
   function getAllStudents() {
     return axios.get(`${HTTP}/students`).then(res => (
       res.data.map((item, index) => {
@@ -24,7 +22,7 @@ function Home() {
             <EditFilled className='cursor-pointer' />
             <DeleteOutlined 
               className='cursor-pointer' 
-              onClick={() => handleDelete(item.id)} // O'chirishni chaqirish
+              onClick={() => handleDelete(item.id)} 
             />
           </div>
         )
@@ -33,12 +31,10 @@ function Home() {
     ))
   }
 
-  // O'chirishni bajarish funktsiyasi
   function handleDelete(id) {
     deleteStudent(id)
       .then(() => {
-        // O'chirish muvaffaqiyatli bo'lganda bajarilishi kerak bo'lgan ishlar
-        queryClient.invalidateQueries(["students"]); // O'zgarishni yangilash
+           queryClient.invalidateQueries(["students"]); 
       })
       .catch(err => {
         console.error("O'chirishda xato:", err);
@@ -53,7 +49,7 @@ function Home() {
   console.log(studentsData);
 
   return (
-    <div className='p-5'>
+    <div >
       <CustomTable data={studentsData} />
     </div>
   )

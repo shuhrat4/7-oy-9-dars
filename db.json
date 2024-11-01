@@ -1,3 +1,10 @@
 {
-  "students": []
+  "students": [
+    {
+      "id": "0c09",
+      "name": "awd",
+      "surname": "dwa",
+      "age": "awd"
+    }
+  ]
 }
